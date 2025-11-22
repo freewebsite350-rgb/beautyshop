@@ -49,6 +49,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  to="/hair"
+                  className="text-sm text-gray-600 hover:text-pink-600 transition-colors"
+                >
+                  Hair & Wigs
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/about"
                   className="text-sm text-gray-600 hover:text-pink-600 transition-colors"
                 >
