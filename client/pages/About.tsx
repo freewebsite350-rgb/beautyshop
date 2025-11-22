@@ -15,8 +15,8 @@ export default function About() {
                 About <span className="text-pink-600">Botswana SmartShop</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Bringing premium beauty products and exceptional customer service
-                to women across Botswana.
+                Bringing premium beauty products and exceptional customer
+                service to women across Botswana.
               </p>
             </div>
           </div>
@@ -31,20 +31,21 @@ export default function About() {
             <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
               <p>
                 Botswana SmartShop was founded with a simple mission: to make
-                premium beauty products accessible and affordable for every woman
-                in Botswana. We believe that everyone deserves to feel confident,
-                beautiful, and empowered.
+                premium beauty products accessible and affordable for every
+                woman in Botswana. We believe that everyone deserves to feel
+                confident, beautiful, and empowered.
               </p>
               <p>
-                What started as a passion project has grown into a trusted online
-                beauty boutique, serving thousands of satisfied customers across
-                the country. We carefully curate every product in our collection
-                to ensure the highest quality and authenticity.
+                What started as a passion project has grown into a trusted
+                online beauty boutique, serving thousands of satisfied customers
+                across the country. We carefully curate every product in our
+                collection to ensure the highest quality and authenticity.
               </p>
               <p>
                 Our commitment to excellence extends beyond just products. We're
-                dedicated to providing exceptional customer service, fast delivery,
-                and personalized beauty advice to help you find exactly what you need.
+                dedicated to providing exceptional customer service, fast
+                delivery, and personalized beauty advice to help you find
+                exactly what you need.
               </p>
             </div>
           </div>

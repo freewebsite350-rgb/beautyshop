@@ -5,7 +5,7 @@ import { MessageCircle } from "lucide-react";
 export default function Hair() {
   const whatsappNumber = "267722246002";
   const whatsappMessage = encodeURIComponent(
-    "Hi! I'm interested in your hair pieces and wigs collection."
+    "Hi! I'm interested in your hair pieces and wigs collection.",
   );
 
   return (
@@ -19,8 +19,9 @@ export default function Hair() {
                 Hair Pieces & <span className="text-pink-600">Wigs</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Transform your look with our premium collection of wigs, hair pieces,
-                extensions, and hair accessories designed for every style and occasion.
+                Transform your look with our premium collection of wigs, hair
+                pieces, extensions, and hair accessories designed for every
+                style and occasion.
               </p>
             </div>
 
@@ -31,9 +32,10 @@ export default function Hair() {
                   Hair & Wigs Coming Soon!
                 </h2>
                 <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-                  We're building an exclusive collection of premium wigs and hair
-                  pieces. Contact our team today to discuss your hair transformation
-                  goals and get personalized styling recommendations.
+                  We're building an exclusive collection of premium wigs and
+                  hair pieces. Contact our team today to discuss your hair
+                  transformation goals and get personalized styling
+                  recommendations.
                 </p>
                 <a
                   href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
@@ -69,8 +71,8 @@ export default function Hair() {
                   Synthetic Wigs
                 </h3>
                 <p className="text-gray-600">
-                  Durable and affordable synthetic wigs that maintain their style
-                  and are easy to care for.
+                  Durable and affordable synthetic wigs that maintain their
+                  style and are easy to care for.
                 </p>
               </div>
               <div className="p-6 bg-pink-50 rounded-lg border border-pink-200">
@@ -133,8 +135,8 @@ export default function Hair() {
                   Care & Maintenance Support
                 </h3>
                 <p className="text-gray-600">
-                  We provide detailed care instructions and are available 24/7 to
-                  answer questions about your purchase.
+                  We provide detailed care instructions and are available 24/7
+                  to answer questions about your purchase.
                 </p>
               </div>
             </div>

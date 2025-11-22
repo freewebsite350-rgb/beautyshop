@@ -5,7 +5,7 @@ import { MessageCircle } from "lucide-react";
 export default function Nails() {
   const whatsappNumber = "267722246002";
   const whatsappMessage = encodeURIComponent(
-    "Hi! I'm interested in your nail accessories and products."
+    "Hi! I'm interested in your nail accessories and products.",
   );
 
   return (
@@ -31,9 +31,9 @@ export default function Nails() {
                   Nails & Accessories Coming Soon!
                 </h2>
                 <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-                  We're building an extensive inventory of premium nail products.
-                  Contact our team today to discuss your nail care needs and get
-                  personalized recommendations.
+                  We're building an extensive inventory of premium nail
+                  products. Contact our team today to discuss your nail care
+                  needs and get personalized recommendations.
                 </p>
                 <a
                   href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
@@ -87,8 +87,8 @@ export default function Nails() {
                   Nail Tips & Extensions
                 </h3>
                 <p className="text-gray-600">
-                  Quality artificial tips and extension materials for custom nail
-                  designs.
+                  Quality artificial tips and extension materials for custom
+                  nail designs.
                 </p>
               </div>
             </div>

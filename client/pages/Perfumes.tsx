@@ -5,7 +5,7 @@ import { MessageCircle } from "lucide-react";
 export default function Perfumes() {
   const whatsappNumber = "267722246002";
   const whatsappMessage = encodeURIComponent(
-    "Hi! I'd like to know more about your perfume collection."
+    "Hi! I'd like to know more about your perfume collection.",
   );
 
   return (
@@ -19,8 +19,8 @@ export default function Perfumes() {
                 Perfume <span className="text-pink-600">Collection</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Discover our curated selection of premium fragrances that capture
-                the essence of sophistication and elegance.
+                Discover our curated selection of premium fragrances that
+                capture the essence of sophistication and elegance.
               </p>
             </div>
 
@@ -31,9 +31,10 @@ export default function Perfumes() {
                   Perfume Collection Coming Soon!
                 </h2>
                 <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-                  We're curating an amazing selection of premium perfumes. In the
-                  meantime, please reach out to our team to discuss your fragrance
-                  preferences and we'll help you find the perfect scent.
+                  We're curating an amazing selection of premium perfumes. In
+                  the meantime, please reach out to our team to discuss your
+                  fragrance preferences and we'll help you find the perfect
+                  scent.
                 </p>
                 <a
                   href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
@@ -69,8 +70,8 @@ export default function Perfumes() {
                   Expert Recommendations
                 </h3>
                 <p className="text-gray-600">
-                  Our beauty experts are here to help you find the perfect fragrance
-                  that matches your style.
+                  Our beauty experts are here to help you find the perfect
+                  fragrance that matches your style.
                 </p>
               </div>
               <div className="p-6 bg-pink-50 rounded-lg border border-pink-200">
@@ -87,8 +88,8 @@ export default function Perfumes() {
                   24/7 Support
                 </h3>
                 <p className="text-gray-600">
-                  Our customer support team is available on WhatsApp and email to
-                  assist you anytime.
+                  Our customer support team is available on WhatsApp and email
+                  to assist you anytime.
                 </p>
               </div>
             </div>

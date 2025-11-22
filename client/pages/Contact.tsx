@@ -13,7 +13,7 @@ export default function Contact() {
 
   const whatsappNumber = "267722246002";
   const whatsappMessage = encodeURIComponent(
-    "Hi Botswana SmartShop! I'd like to get in touch."
+    "Hi Botswana SmartShop! I'd like to get in touch.",
   );
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -35,8 +35,8 @@ export default function Contact() {
                 Get In <span className="text-pink-600">Touch</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Have questions or need assistance? We're here to help! Contact us
-                anytime.
+                Have questions or need assistance? We're here to help! Contact
+                us anytime.
               </p>
             </div>
           </div>
@@ -88,9 +88,7 @@ export default function Contact() {
                 <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
                   <Phone className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  Phone
-                </h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
                 <p className="text-gray-600 mb-2">
                   Call us to speak with a team member
                 </p>
@@ -111,8 +109,8 @@ export default function Contact() {
                 </div>
                 <div className="space-y-2 text-gray-600">
                   <p>
-                    <span className="font-semibold">Monday - Friday:</span> 9:00 AM
-                    - 6:00 PM
+                    <span className="font-semibold">Monday - Friday:</span> 9:00
+                    AM - 6:00 PM
                   </p>
                   <p>
                     <span className="font-semibold">Saturday:</span> 10:00 AM -
@@ -239,8 +237,8 @@ export default function Contact() {
                 className="text-green-600 font-bold hover:underline"
               >
                 WhatsApp
-              </a>
-              {" "}for instant support
+              </a>{" "}
+              for instant support
             </p>
           </div>
         </section>

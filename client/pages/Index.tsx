@@ -1,7 +1,13 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Sparkles, ShoppingBag, Truck, Heart, MessageCircle } from "lucide-react";
+import {
+  Sparkles,
+  ShoppingBag,
+  Truck,
+  Heart,
+  MessageCircle,
+} from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Index() {
@@ -9,7 +15,7 @@ export default function Index() {
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const whatsappNumber = "267722246002";
   const whatsappMessage = encodeURIComponent(
-    "Hi Botswana SmartShop! I'm interested in your products. Can you help me?"
+    "Hi Botswana SmartShop! I'm interested in your products. Can you help me?",
   );
 
   // PWA Install Prompt
@@ -243,7 +249,8 @@ export default function Index() {
         <section className="py-12 md:py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-              Why Choose <span className="text-pink-600">Botswana SmartShop</span>
+              Why Choose{" "}
+              <span className="text-pink-600">Botswana SmartShop</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -268,7 +275,8 @@ export default function Index() {
                   Premium Quality
                 </h3>
                 <p className="text-gray-600">
-                  Authentic products from trusted international and local brands.
+                  Authentic products from trusted international and local
+                  brands.
                 </p>
               </div>
 
@@ -422,7 +430,8 @@ export default function Index() {
                   Hair & <span className="text-pink-600">Wigs</span>
                 </h2>
                 <p className="text-gray-600 mt-2">
-                  Transform your look with our premium collection of wigs and hair pieces
+                  Transform your look with our premium collection of wigs and
+                  hair pieces
                 </p>
               </div>
               <Link
@@ -483,8 +492,8 @@ export default function Index() {
               Need Personalized Assistance?
             </h2>
             <p className="text-white text-lg mb-8 opacity-90">
-              Chat with our beauty experts on WhatsApp for product recommendations,
-              custom orders, and exclusive offers!
+              Chat with our beauty experts on WhatsApp for product
+              recommendations, custom orders, and exclusive offers!
             </p>
             <a
               href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
@@ -535,7 +544,9 @@ export default function Index() {
                     ))}
                   </div>
                   <p className="text-gray-700 mb-4">{testimonial.text}</p>
-                  <p className="font-bold text-gray-900">— {testimonial.name}</p>
+                  <p className="font-bold text-gray-900">
+                    — {testimonial.name}
+                  </p>
                 </div>
               ))}
             </div>
@@ -549,7 +560,8 @@ export default function Index() {
               Stay Updated
             </h2>
             <p className="text-gray-600 mb-8">
-              Subscribe to get exclusive offers, new product launches, and beauty tips.
+              Subscribe to get exclusive offers, new product launches, and
+              beauty tips.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <input
