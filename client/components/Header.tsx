@@ -35,6 +35,12 @@ export default function Header() {
               Nails & Accessories
             </Link>
             <Link
+              to="/hair"
+              className="text-gray-700 hover:text-pink-600 font-medium transition-colors"
+            >
+              Hair & Wigs
+            </Link>
+            <Link
               to="/about"
               className="text-gray-700 hover:text-pink-600 font-medium transition-colors"
             >
