@@ -23,7 +23,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-gray-600">
-              Premium perfumes and nail accessories for the modern woman.
+              Premium perfumes, nails, wigs, and accessories for the modern woman.
             </p>
           </div>
 
