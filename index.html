@@ -18,7 +18,7 @@
   <body>
     <div id="root"></div>
 
-    <script type="module" src="/client/App.tsx"></script>
+    <script type="module" src="/client/main.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration failed', err));
