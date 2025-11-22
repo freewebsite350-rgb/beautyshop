@@ -96,6 +96,37 @@ export default function Index() {
     },
   ];
 
+  const hairProducts = [
+    {
+      id: 1,
+      name: "Human Hair Wigs",
+      price: "P799",
+      image: "💇",
+      rating: 4.9,
+    },
+    {
+      id: 2,
+      name: "Synthetic Wigs",
+      price: "P399",
+      image: "💁",
+      rating: 4.8,
+    },
+    {
+      id: 3,
+      name: "Hair Extensions",
+      price: "P599",
+      image: "✂️",
+      rating: 4.7,
+    },
+    {
+      id: 4,
+      name: "Wig Accessories Pack",
+      price: "P249",
+      image: "👑",
+      rating: 4.9,
+    },
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
