@@ -229,11 +229,11 @@ export default function Index() {
               {/* Right Visual */}
               <div className="relative h-96 md:h-full flex items-center justify-center">
                 <div className="absolute w-72 h-72 bg-gradient-to-r from-pink-200 to-rose-200 rounded-full blur-3xl opacity-40 animate-pulse" />
-                <div className="relative text-center">
-                  <div className="text-8xl mb-4">💅</div>
-                  <div className="text-8xl mb-4">🌹</div>
-                  <div className="text-8xl">✨</div>
-                </div>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F2e059630d1c64d6eab9280f9a9735a4a%2F4562d30af9c248e19f7c61e82a0a4e50?format=webp&width=800"
+                  alt="Botswana SmartShop - Premium nail and beauty services"
+                  className="relative w-full max-w-sm h-96 md:h-full md:max-w-md object-cover rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow duration-300"
+                />
               </div>
             </div>
           </div>
