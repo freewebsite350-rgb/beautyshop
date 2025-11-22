@@ -413,6 +413,69 @@ export default function Index() {
           </div>
         </section>
 
+        {/* Featured Hair & Wigs */}
+        <section className="py-12 md:py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between mb-12">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+                  Hair & <span className="text-pink-600">Wigs</span>
+                </h2>
+                <p className="text-gray-600 mt-2">
+                  Transform your look with our premium collection of wigs and hair pieces
+                </p>
+              </div>
+              <Link
+                to="/hair"
+                className="hidden md:inline-flex text-pink-600 font-bold hover:text-rose-600 transition-colors"
+              >
+                View All →
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {hairProducts.map((product) => (
+                <div
+                  key={product.id}
+                  className="group bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-pink-200"
+                >
+                  <div className="relative bg-white h-48 flex items-center justify-center overflow-hidden">
+                    <span className="text-6xl group-hover:scale-110 transition-transform duration-300">
+                      {product.image}
+                    </span>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-bold text-gray-900 mb-2">
+                      {product.name}
+                    </h3>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-yellow-400">★</span>
+                      <span className="text-sm text-gray-600">
+                        {product.rating} (reviews)
+                      </span>
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-2xl font-bold text-pink-600">
+                        {product.price}
+                      </span>
+                      <button className="p-2 bg-pink-100 text-pink-600 rounded-lg hover:bg-pink-600 hover:text-white transition-colors">
+                        <ShoppingBag className="w-5 h-5" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <Link
+              to="/hair"
+              className="md:hidden block text-center mt-8 text-pink-600 font-bold hover:text-rose-600 transition-colors"
+            >
+              View All Hair & Wigs →
+            </Link>
+          </div>
+        </section>
+
         {/* WhatsApp CTA Section */}
         <section className="py-12 md:py-20 bg-gradient-to-r from-pink-500 via-rose-500 to-pink-600">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
