@@ -90,7 +90,7 @@ export default function Index() {
     },
   ];
 
-  const nailProducts = [
+  const defaultNails = [
     {
       id: 1,
       name: "Gel Polish Collection",
