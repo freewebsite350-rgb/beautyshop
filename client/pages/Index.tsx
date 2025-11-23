@@ -10,13 +10,31 @@ import {
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
+interface CustomProduct {
+  id: string;
+  name: string;
+  price: string;
+  description: string;
+  image: string;
+  category: "perfumes" | "nails" | "hair";
+}
+
 export default function Index() {
   const [showInstallPrompt, setShowInstallPrompt] = useState(false);
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
+  const [customProducts, setCustomProducts] = useState<CustomProduct[]>([]);
   const whatsappNumber = "267722246002";
   const whatsappMessage = encodeURIComponent(
     "Hi Botswana SmartShop! I'm interested in your products. Can you help me?",
   );
+
+  // Load custom products from localStorage
+  useEffect(() => {
+    const saved = localStorage.getItem("shop_products");
+    if (saved) {
+      setCustomProducts(JSON.parse(saved));
+    }
+  }, []);
 
   // PWA Install Prompt
   useEffect(() => {
