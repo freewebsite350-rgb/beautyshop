@@ -153,9 +153,18 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-gray-600">
-              © 2024 Botswana SmartShop. All rights reserved.
-            </p>
+            <div className="flex items-center gap-4">
+              <p className="text-sm text-gray-600">
+                © 2024 Botswana SmartShop. All rights reserved.
+              </p>
+              <Link
+                to="/admin-dash"
+                className="text-xs text-gray-400 hover:text-pink-600 transition-colors flex items-center gap-1 opacity-50 hover:opacity-100"
+                title="Tumi's Admin Dashboard"
+              >
+                <Lock className="w-3 h-3" />
+              </Link>
+            </div>
             <div className="flex items-center gap-4">
               <a
                 href="#"
