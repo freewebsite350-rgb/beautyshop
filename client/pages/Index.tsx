@@ -121,7 +121,7 @@ export default function Index() {
     },
   ];
 
-  const hairProducts = [
+  const defaultHair = [
     {
       id: 1,
       name: "Human Hair Wigs",
