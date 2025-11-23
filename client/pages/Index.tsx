@@ -441,11 +441,16 @@ export default function Index() {
                   key={product.id}
                   className="group bg-gradient-to-br from-pink-50 to-rose-50 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-pink-200"
                 >
-                  <div className="relative bg-white h-48 flex items-center justify-center overflow-hidden">
+                  <a
+                    href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Hi! I'm interested in ${product.name}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative bg-white h-48 flex items-center justify-center overflow-hidden cursor-pointer hover:bg-pink-100 transition-colors block"
+                  >
                     <span className="text-6xl group-hover:scale-110 transition-transform duration-300">
                       {product.image}
                     </span>
-                  </div>
+                  </a>
                   <div className="p-4">
                     <h3 className="font-bold text-gray-900 mb-2">
                       {product.name}
