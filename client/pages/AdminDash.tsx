@@ -165,7 +165,7 @@ export default function AdminDash() {
           </form>
 
           <p className="text-xs text-gray-500 text-center mt-6">
-            Default password: admin123
+            Enter your admin password
           </p>
         </div>
       </div>
