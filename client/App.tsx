@@ -25,17 +25,17 @@ export default function App() {
         <Sonner />
         <BrowserRouter>
           <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/perfumes" element={<Perfumes />} />
-          <Route path="/nails" element={<Nails />} />
-          <Route path="/hair" element={<Hair />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/admin-dash" element={<AdminDash />} />
-          <Route path="/admin" element={<Admin />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/perfumes" element={<Perfumes />} />
+            <Route path="/nails" element={<Nails />} />
+            <Route path="/hair" element={<Hair />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/admin-dash" element={<AdminDash />} />
+            <Route path="/admin" element={<Admin />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

@@ -153,32 +153,38 @@ export default function Index() {
   ];
 
   // Merge default products with custom products from localStorage
-  const customPerfumes = customProducts.filter((p) => p.category === "perfumes").map((p) => ({
-    id: parseInt(p.id) || Math.random(),
-    name: p.name,
-    price: p.price,
-    image: p.image,
-    rating: 5,
-    description: p.description,
-  }));
+  const customPerfumes = customProducts
+    .filter((p) => p.category === "perfumes")
+    .map((p) => ({
+      id: parseInt(p.id) || Math.random(),
+      name: p.name,
+      price: p.price,
+      image: p.image,
+      rating: 5,
+      description: p.description,
+    }));
 
-  const customNails = customProducts.filter((p) => p.category === "nails").map((p) => ({
-    id: parseInt(p.id) || Math.random(),
-    name: p.name,
-    price: p.price,
-    image: p.image,
-    rating: 5,
-    description: p.description,
-  }));
+  const customNails = customProducts
+    .filter((p) => p.category === "nails")
+    .map((p) => ({
+      id: parseInt(p.id) || Math.random(),
+      name: p.name,
+      price: p.price,
+      image: p.image,
+      rating: 5,
+      description: p.description,
+    }));
 
-  const customHairProds = customProducts.filter((p) => p.category === "hair").map((p) => ({
-    id: parseInt(p.id) || Math.random(),
-    name: p.name,
-    price: p.price,
-    image: p.image,
-    rating: 5,
-    description: p.description,
-  }));
+  const customHairProds = customProducts
+    .filter((p) => p.category === "hair")
+    .map((p) => ({
+      id: parseInt(p.id) || Math.random(),
+      name: p.name,
+      price: p.price,
+      image: p.image,
+      rating: 5,
+      description: p.description,
+    }));
 
   // Combine default and custom products
   const perfumeProducts = [...defaultPerfumes, ...customPerfumes];

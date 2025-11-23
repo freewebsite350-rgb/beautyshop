@@ -1,5 +1,12 @@
 import { useState, useEffect } from "react";
-import { LogOut, Plus, Trash2, AlertCircle, CheckCircle, Lock } from "lucide-react";
+import {
+  LogOut,
+  Plus,
+  Trash2,
+  AlertCircle,
+  CheckCircle,
+  Lock,
+} from "lucide-react";
 
 interface Product {
   id: string;
@@ -239,7 +246,9 @@ export default function AdminDash() {
                   <input
                     type="text"
                     value={form.price}
-                    onChange={(e) => setForm({ ...form, price: e.target.value })}
+                    onChange={(e) =>
+                      setForm({ ...form, price: e.target.value })
+                    }
                     className="w-full px-3 py-2 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm"
                     placeholder="e.g., P299"
                   />
@@ -267,7 +276,9 @@ export default function AdminDash() {
                   <input
                     type="text"
                     value={form.image}
-                    onChange={(e) => setForm({ ...form, image: e.target.value })}
+                    onChange={(e) =>
+                      setForm({ ...form, image: e.target.value })
+                    }
                     className="w-full px-3 py-2 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm"
                     placeholder="https://..."
                   />
@@ -292,7 +303,10 @@ export default function AdminDash() {
                     onChange={(e) =>
                       setForm({
                         ...form,
-                        category: e.target.value as "perfumes" | "nails" | "hair",
+                        category: e.target.value as
+                          | "perfumes"
+                          | "nails"
+                          | "hair",
                       })
                     }
                     className="w-full px-3 py-2 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm"

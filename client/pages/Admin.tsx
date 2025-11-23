@@ -70,7 +70,9 @@ export default function Admin() {
       fetchProducts(newToken);
     } catch (error) {
       setAuthError(
-        error instanceof Error ? error.message : "Login failed. Please try again."
+        error instanceof Error
+          ? error.message
+          : "Login failed. Please try again.",
       );
     } finally {
       setAuthLoading(false);
@@ -115,7 +117,7 @@ export default function Admin() {
       setTimeout(() => setFormSuccess(""), 3000);
     } catch (error) {
       setFormError(
-        error instanceof Error ? error.message : "Failed to upload image"
+        error instanceof Error ? error.message : "Failed to upload image",
       );
     } finally {
       setUploading(false);
@@ -170,7 +172,7 @@ export default function Admin() {
       }
     } catch (error) {
       setFormError(
-        error instanceof Error ? error.message : "Failed to save product"
+        error instanceof Error ? error.message : "Failed to save product",
       );
     } finally {
       setSaving(false);
@@ -203,13 +205,10 @@ export default function Admin() {
     setDeleteLoading(productId);
 
     try {
-      const response = await fetch(
-        `${API_BASE}/products/delete/${productId}`,
-        {
-          method: "DELETE",
-          headers: { Authorization: `Bearer ${token}` },
-        }
-      );
+      const response = await fetch(`${API_BASE}/products/delete/${productId}`, {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${token}` },
+      });
 
       if (!response.ok) {
         throw new Error("Failed to delete product");
