@@ -11,6 +11,7 @@ import Nails from "./pages/Nails";
 import Hair from "./pages/Hair";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
