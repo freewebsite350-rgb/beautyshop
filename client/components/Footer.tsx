@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone, MessageCircle, Lock } from "lucide-react";
 
 export default function Footer() {
   const whatsappNumber = "267722246002";
