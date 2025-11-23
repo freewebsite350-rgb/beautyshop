@@ -179,7 +179,7 @@ export default function AdminDash() {
       <header className="bg-white border-b border-pink-100 shadow-sm sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-gray-900">
-            <span className="text-pink-600">📦</span> Product Manager
+            <span className="text-pink-600">💄</span> Tumi's Dashboard
           </h1>
           <button
             onClick={handleLogout}
