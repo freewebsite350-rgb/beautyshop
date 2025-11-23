@@ -58,7 +58,8 @@ export default function Index() {
     }
   };
 
-  const perfumeProducts = [
+  // Default products
+  const defaultPerfumes = [
     {
       id: 1,
       name: "Blossom Dreams",
