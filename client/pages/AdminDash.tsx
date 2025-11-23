@@ -10,7 +10,7 @@ interface Product {
   category: "perfumes" | "nails" | "hair";
 }
 
-const ADMIN_PASSWORD = "admin123"; // Change this to your desired password
+const ADMIN_PASSWORD = "mysmartshopgo"; // Tumi's admin password
 
 export default function AdminDash() {
   // Auth State
