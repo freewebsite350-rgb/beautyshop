@@ -159,10 +159,10 @@ export default function Footer() {
               </p>
               <Link
                 to="/admin-dash"
-                className="text-xs text-gray-400 hover:text-pink-600 transition-colors flex items-center gap-1 opacity-50 hover:opacity-100"
-                title="Tumi's Admin Dashboard"
+                className="text-xs text-gray-500 hover:text-pink-600 transition-colors flex items-center gap-1"
+                title="Admin Dashboard"
               >
-                <Lock className="w-3 h-3" />
+                <Lock className="w-4 h-4" />
               </Link>
             </div>
             <div className="flex items-center gap-4">
