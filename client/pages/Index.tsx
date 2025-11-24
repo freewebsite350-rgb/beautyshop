@@ -425,9 +425,17 @@ export default function Index() {
                     rel="noopener noreferrer"
                     className="relative bg-gradient-to-br from-pink-100 to-rose-100 h-48 flex items-center justify-center overflow-hidden cursor-pointer hover:bg-pink-200 transition-colors block"
                   >
-                    <span className="text-6xl group-hover:scale-110 transition-transform duration-300">
-                      {product.image}
-                    </span>
+                    {product.image?.startsWith("data:") ? (
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    ) : (
+                      <span className="text-6xl group-hover:scale-110 transition-transform duration-300">
+                        {product.image}
+                      </span>
+                    )}
                   </a>
                   <div className="p-4">
                     <h3 className="font-bold text-gray-900 mb-2">
