@@ -195,36 +195,60 @@ export default function Index() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      {/* PWA Install Prompt */}
+      {/* PWA Install Prompt - Native App Style */}
       {showInstallPrompt && (
-        <div className="fixed top-20 left-4 right-4 md:left-auto md:right-4 z-40 max-w-sm bg-gradient-to-r from-pink-500 to-rose-600 text-white p-4 rounded-lg shadow-lg">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <h3 className="font-bold text-lg mb-1">Install App</h3>
-              <p className="text-sm opacity-90">
-                Install Botswana SmartShop on your phone for quick access!
-              </p>
+        <div className="fixed inset-0 bg-black/40 flex items-end sm:items-center justify-center z-50 p-4">
+          <div className="w-full sm:w-full max-w-sm bg-white rounded-3xl sm:rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-bottom-4 sm:slide-in-from-center">
+            {/* Header with gradient */}
+            <div className="bg-gradient-to-b from-pink-500 to-rose-600 pt-8 pb-6 px-6 text-white text-center">
+              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm border border-white/30">
+                <span className="text-5xl">💄</span>
+              </div>
+              <h3 className="font-bold text-2xl mb-2">Botswana SmartShop</h3>
+              <p className="text-sm opacity-90">Beauty & Accessories</p>
             </div>
-            <button
-              onClick={() => setShowInstallPrompt(false)}
-              className="text-white text-lg font-bold hover:opacity-80"
-            >
-              ✕
-            </button>
-          </div>
-          <div className="flex gap-2 mt-3">
-            <button
-              onClick={handleInstall}
-              className="flex-1 bg-white text-pink-600 font-bold py-2 px-4 rounded hover:bg-opacity-90 transition-all"
-            >
-              Install
-            </button>
-            <button
-              onClick={() => setShowInstallPrompt(false)}
-              className="flex-1 bg-pink-600 text-white font-bold py-2 px-4 rounded hover:bg-pink-700 transition-all border border-white"
-            >
-              Later
-            </button>
+
+            {/* Content */}
+            <div className="px-6 py-6">
+              <h4 className="font-bold text-lg text-gray-900 mb-2">
+                Get Quick Access
+              </h4>
+              <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+                Install Botswana SmartShop on your home screen to access products, place orders, and chat with our team anytime.
+              </p>
+
+              {/* Features list */}
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start gap-3">
+                  <span className="text-pink-600 font-bold text-lg flex-shrink-0">✓</span>
+                  <span className="text-sm text-gray-700">Instant access without opening a browser</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-pink-600 font-bold text-lg flex-shrink-0">✓</span>
+                  <span className="text-sm text-gray-700">Offline browsing of your favorites</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-pink-600 font-bold text-lg flex-shrink-0">✓</span>
+                  <span className="text-sm text-gray-700">Push notifications for new products</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Buttons */}
+            <div className="px-6 pb-6 space-y-3">
+              <button
+                onClick={handleInstall}
+                className="w-full px-6 py-3 bg-gradient-to-r from-pink-500 to-rose-600 text-white font-bold rounded-xl hover:shadow-lg hover:from-pink-600 hover:to-rose-700 transition-all active:scale-95"
+              >
+                Install App
+              </button>
+              <button
+                onClick={() => setShowInstallPrompt(false)}
+                className="w-full px-6 py-3 bg-gray-100 text-gray-900 font-semibold rounded-xl hover:bg-gray-200 transition-all active:scale-95"
+              >
+                Not Now
+              </button>
+            </div>
           </div>
         </div>
       )}
