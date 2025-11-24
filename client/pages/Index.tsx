@@ -230,22 +230,35 @@ export default function Index() {
                 Get Quick Access
               </h4>
               <p className="text-gray-600 text-sm mb-6 leading-relaxed">
-                Install Botswana SmartShop on your home screen to access products, place orders, and chat with our team anytime.
+                Install Botswana SmartShop on your home screen to access
+                products, place orders, and chat with our team anytime.
               </p>
 
               {/* Features list */}
               <div className="space-y-3 mb-6">
                 <div className="flex items-start gap-3">
-                  <span className="text-pink-600 font-bold text-lg flex-shrink-0">✓</span>
-                  <span className="text-sm text-gray-700">Instant access without opening a browser</span>
+                  <span className="text-pink-600 font-bold text-lg flex-shrink-0">
+                    ✓
+                  </span>
+                  <span className="text-sm text-gray-700">
+                    Instant access without opening a browser
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-pink-600 font-bold text-lg flex-shrink-0">✓</span>
-                  <span className="text-sm text-gray-700">Offline browsing of your favorites</span>
+                  <span className="text-pink-600 font-bold text-lg flex-shrink-0">
+                    ✓
+                  </span>
+                  <span className="text-sm text-gray-700">
+                    Offline browsing of your favorites
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-pink-600 font-bold text-lg flex-shrink-0">✓</span>
-                  <span className="text-sm text-gray-700">Push notifications for new products</span>
+                  <span className="text-pink-600 font-bold text-lg flex-shrink-0">
+                    ✓
+                  </span>
+                  <span className="text-sm text-gray-700">
+                    Push notifications for new products
+                  </span>
                 </div>
               </div>
             </div>
