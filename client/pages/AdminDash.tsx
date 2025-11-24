@@ -271,25 +271,32 @@ export default function AdminDash() {
 
                 <div>
                   <label className="block text-xs font-bold text-gray-900 mb-1">
-                    Image URL
+                    Product Image
                   </label>
-                  <input
-                    type="text"
-                    value={form.image}
-                    onChange={(e) =>
-                      setForm({ ...form, image: e.target.value })
-                    }
-                    className="w-full px-3 py-2 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm"
-                    placeholder="https://..."
-                  />
+                  <div className="relative">
+                    <input
+                      type="file"
+                      accept="image/*"
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) {
+                          const reader = new FileReader();
+                          reader.onload = (event) => {
+                            const base64 = event.target?.result as string;
+                            setForm({ ...form, image: base64 });
+                          };
+                          reader.readAsDataURL(file);
+                        }
+                      }}
+                      className="w-full px-3 py-2 border border-pink-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm file:mr-3 file:py-2 file:px-3 file:border-0 file:text-xs file:font-bold file:bg-pink-100 file:text-pink-600 hover:file:bg-pink-200 cursor-pointer"
+                      placeholder="Upload image..."
+                    />
+                  </div>
                   {form.image && (
                     <img
                       src={form.image}
                       alt="preview"
                       className="w-full h-20 object-cover rounded mt-2"
-                      onError={() => (
-                        <div className="text-xs text-red-600">Invalid URL</div>
-                      )}
                     />
                   )}
                 </div>
