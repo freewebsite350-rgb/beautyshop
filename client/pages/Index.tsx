@@ -30,10 +30,26 @@ export default function Index() {
 
   // Load custom products from localStorage
   useEffect(() => {
-    const saved = localStorage.getItem("shop_products");
-    if (saved) {
-      setCustomProducts(JSON.parse(saved));
-    }
+    const loadCustomProducts = () => {
+      const saved = localStorage.getItem("shop_products");
+      if (saved) {
+        try {
+          setCustomProducts(JSON.parse(saved));
+        } catch (e) {
+          console.error("Failed to parse products:", e);
+        }
+      }
+    };
+
+    loadCustomProducts();
+
+    // Listen for storage changes (when admin adds products)
+    const handleStorageChange = () => {
+      loadCustomProducts();
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+    return () => window.removeEventListener("storage", handleStorageChange);
   }, []);
 
   // PWA Install Prompt
