@@ -159,10 +159,11 @@ export default function Footer() {
               </p>
               <Link
                 to="/admin-dash"
-                className="text-xs text-gray-500 hover:text-pink-600 transition-colors flex items-center gap-1"
+                className="text-xs text-gray-600 hover:text-pink-600 hover:bg-pink-50 px-2 py-1 rounded transition-colors flex items-center gap-1"
                 title="Admin Dashboard"
               >
                 <Lock className="w-4 h-4" />
+                <span className="hidden sm:inline text-gray-600">Admin</span>
               </Link>
             </div>
             <div className="flex items-center gap-4">
